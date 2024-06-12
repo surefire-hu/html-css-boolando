@@ -23,7 +23,7 @@ body {
 }
 
 /* Header */
-header {
+header, footer {
     padding: 0 150px;
     display: flex;
     justify-content: space-between;
@@ -143,9 +143,65 @@ div.photo {
 
 img.photo-1:hover {
     opacity: 1;
-    transition: opacity 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .heart:hover {
     color: var(--color-red);
+    transition: all 0.3s ease;
+}
+
+/* Footer */
+footer {
+    background-color: #1A1A1A;
+    color: white;
+}
+
+.footer-content p {
+    margin: 10px 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+footer ul {
+    list-style-type: none;
+    margin: 10px 0;
+    padding: 0;
+    gap: 20px;
+}
+
+footer ul li {
+    display: inline-block;
+    margin: 0 10px 0 0;
+}
+
+footer ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.social-media {
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.social-media a {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.social-media > a > i{
+    color: white;
+    background-color: #1A1A1A;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.social-media > a > i:hover {
+    color: #FF6600;
+    transition: all 0.3s ease;
+}
+.social-media p {
+    text-align: center;
 }

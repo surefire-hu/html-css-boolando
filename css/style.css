@@ -23,6 +23,13 @@ body {
 }
 
 /* Header */
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+}
+
 header, footer {
     padding: 0 150px;
     display: flex;
@@ -45,6 +52,9 @@ header .icons > i {
 }
 
 /* Main */
+main {
+    margin-top: 100px;
+}
 .box-container {
     padding: 50px 0;
 }

@@ -1,0 +1,151 @@
+/* Reset */
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+/* Root */
+:root {
+    --color-red:#FF0000;
+    --color-white:white;
+} 
+
+/* Font */
+body {
+    font-family: 'Roboto',sans-serif;
+}
+
+/* debug */
+.debug header {
+    background-color: #FF6900;
+    height: 60px;
+}
+
+/* Header */
+header {
+    padding: 0 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .navbar a {
+    text-decoration: none;
+    color: var(--color-white);
+}
+
+header .logo img {
+    width: 100px;
+}
+
+header .icons > i {
+    background-color: #FF6900;
+    color: var(--color-white);
+}
+
+/* Main */
+.box-container {
+    padding: 50px 0;
+}
+
+.container-flex {
+    display: flex;
+    max-width: 1300px;
+    margin: 0 auto;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+h2 {
+    font-size: 18px;
+    line-height: 24px;
+}
+
+h3 {
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: lighter;
+}
+
+.price {
+    color: var(--color-red);
+}
+
+i {
+    padding: 12px;
+    display: inline-block;
+    font-size: 24px;
+    background-color: var(--color-white);
+    line-height: 30px;
+    text-align: center;
+}
+
+.discount {
+    background-color: var(--color-red);
+    display: inline-block;
+    padding: 5px;
+}
+
+.green {    
+    background-color: #008000;
+    display: inline-block;
+    padding: 5px;
+}
+
+.heart {
+    position: absolute;
+    right: 0;
+    top: 10px;
+}
+
+.info > span {
+    font-size: 14px;
+}
+
+.real-price {
+    text-decoration: line-through;
+}
+.card {
+    width: calc(( 100% - 40px ) / 3);
+}
+
+.details {
+    position: absolute;
+    bottom: 40px;
+    left: 0;
+    color: var(--color-white);
+    display: inline-block;
+}
+
+.info{
+    margin-top: 10px;
+    width: 100%;
+    position: static;
+}
+
+div.photo {
+    position: relative;
+}
+.photo-2 {
+    width: 100%;
+    display: block;
+}
+
+.photo-1 {
+    width: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+img.photo-1:hover {
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+.heart:hover {
+    color: var(--color-red);
+}
